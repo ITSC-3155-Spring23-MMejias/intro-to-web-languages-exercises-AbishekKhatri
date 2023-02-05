@@ -1,0 +1,22 @@
+html>
+  <head>
+    <title>Gandhi's Inspiring Quote</title>
+    <style>
+      div {
+        background-color: lightblue;
+        border: 2px solid blue;
+        padding: 20px;
+        text-align: center;
+      }
+      p {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>"Be the Change you wish to see in the world"</p>
+      <p>- Mahatma Gandhi</p>
+    </div>
+  </body>
+</html>
