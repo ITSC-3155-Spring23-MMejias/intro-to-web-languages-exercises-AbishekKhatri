@@ -1,0 +1,9 @@
+<html>
+  <head>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <h1>Welcome to the Home Page</h1>
+    <p><a href="about.html">Learn more about us</a></p>
+  </body>
+</html>
