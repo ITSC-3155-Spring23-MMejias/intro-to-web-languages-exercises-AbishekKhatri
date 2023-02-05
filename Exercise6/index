@@ -1,0 +1,10 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <header id="main-title">Hello World</header>
+    <p class="content">My name is Abishek Khatri and I am a senior in UNC Charlotte, I am majoring in Computer science with a concentration in Data Science.</p>
+    <p class="content">I like watching soccer and playing video games. My favorite soccer team is Real Madrid.</p>
+  </body>
+</html>
