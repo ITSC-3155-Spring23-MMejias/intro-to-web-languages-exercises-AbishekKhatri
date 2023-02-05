@@ -1,0 +1,10 @@
+<html>
+  <head>
+    <title>About Page</title>
+  </head>
+  <body>
+    <h1>About Us</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum, mi et accumsan placerat, libero libero euismod velit, vel blandit velit odio vel turpis. Integer varius justo a leo eleifend placerat. Sed euismod, est eget varius congue, odio dolor hendrerit risus, in tempor risus diam eget dui. Nam eget congue nulla.</p>
+    <p><a href="index.html">Go back to the Home Page</a></p>
+  </body>
+</html>
