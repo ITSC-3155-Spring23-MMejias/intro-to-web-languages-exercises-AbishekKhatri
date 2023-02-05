@@ -1,0 +1,54 @@
+<html>
+<head>
+ <title>Index Page</title>
+</head>
+<body>
+<h1>
+// Selecting the element with the id "txt-price"
+  var priceInput = document.getElementById('txt-price');
+
+  // Selecting the element with the id "txt-quantity"
+  var quantityInput = document.getElementById('txt-quantity');
+
+  // Selecting the element with the id "btn-submit"
+  var submitBtn = document.getElementById('btn-submit');
+
+  // Selecting the element with id "output"
+  var output = document.getElementById('output');
+
+  // Adding a click event listener 
+  submitBtn.addEventListener('click', function () {
+
+    // Storing price input field’s value 
+    var price = priceInput.value;
+
+    // Storing the value of the quantity input field
+    var quanity = quantityInput.value;
+
+    // Changing the price value to a number
+    price = +price;
+
+    // Changing the quantity value to a number
+    quanity = +quanity;
+
+    // Checking if price is quantity
+    if (Number.isNaN(price) || Number.isNaN(quanity)) {
+
+     //  if both is not true, show “invalid input”
+      output.innerHTML = 'Invalid input';
+
+      // End the function
+      return;
+    }
+    // Calculating the total price by multiplying the price and the quantity
+    var totalPrice = price * quanity;
+
+    //  math function
+    totalPrice = Math.round(totalPrice * 100) / 100;
+
+    // Displaying the result in the output
+    output.innerHTML = quanity + ' items at $' + price + ' each is $' + totalPrice;
+  });
+</h1>
+</body>
+</html>
