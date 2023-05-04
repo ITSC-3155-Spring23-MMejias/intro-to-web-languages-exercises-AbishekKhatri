@@ -1,54 +1,63 @@
+<!DOCTYPE html>
 <html>
 <head>
- <title>Index Page</title>
+  <title>Index Page</title>
 </head>
 <body>
-<h1>
-// Selecting the element with the id "txt-price"
-  var priceInput = document.getElementById('txt-price');
+  <h1>
+    <!-- This is where the JavaScript code starts -->
+    // Selecting the element with the id "txt-price"
+    var priceInput = document.getElementById('txt-price');
 
-  // Selecting the element with the id "txt-quantity"
-  var quantityInput = document.getElementById('txt-quantity');
+    // Selecting the element with the id "txt-quantity"
+    var quantityInput = document.getElementById('txt-quantity');
 
-  // Selecting the element with the id "btn-submit"
-  var submitBtn = document.getElementById('btn-submit');
+    // Selecting the element with the id "btn-submit"
+    var submitBtn = document.getElementById('btn-submit');
 
-  // Selecting the element with id "output"
-  var output = document.getElementById('output');
+    // Selecting the element with id "output"
+    var output = document.getElementById('output');
 
-  // Adding a click event listener 
-  submitBtn.addEventListener('click', function () {
+    // Adding a click event listener 
+    submitBtn.addEventListener('click', function () {
 
-    // Storing price input field’s value 
-    var price = priceInput.value;
+      // Storing price input field’s value 
+      var price = priceInput.value;
 
-    // Storing the value of the quantity input field
-    var quanity = quantityInput.value;
+      // Storing the value of the quantity input field
+      var quanity = quantityInput.value;
 
-    // Changing the price value to a number
-    price = +price;
+      // Changing the price value to a number
+      price = +price;
 
-    // Changing the quantity value to a number
-    quanity = +quanity;
+      // Changing the quantity value to a number
+      quanity = +quanity;
 
-    // Checking if price is quantity
-    if (Number.isNaN(price) || Number.isNaN(quanity)) {
+      // Checking if price is quantity
+      if (Number.isNaN(price) || Number.isNaN(quanity)) {
 
-     //  if both is not true, show “invalid input”
-      output.innerHTML = 'Invalid input';
+        // If either value is not a number, show "invalid input"
+        output.innerHTML = 'Invalid input';
 
-      // End the function
-      return;
-    }
-    // Calculating the total price by multiplying the price and the quantity
-    var totalPrice = price * quanity;
+        // End the function
+        return;
+      }
 
-    //  math function
-    totalPrice = Math.round(totalPrice * 100) / 100;
+      // Calculating the total price by multiplying the price and the quantity
+      var totalPrice = price * quanity;
 
-    // Displaying the result in the output
-    output.innerHTML = quanity + ' items at $' + price + ' each is $' + totalPrice;
-  });
-</h1>
+      // Rounding the total price to 2 decimal places
+      totalPrice = Math.round(totalPrice * 100) / 100;
+
+      // Displaying the result in the output
+      output.innerHTML = quanity + ' items at $' + price + ' each is $' + totalPrice;
+    });
+  </h1>
+
+  <input type="text" id="txt-price" placeholder="Enter the price of the item">
+  <input type="text" id="txt-quantity" placeholder="Enter the quanity of the item">
+  <button id="btn-submit">Calculate</button>
+  <div id="output"></div>
+  
 </body>
 </html>
